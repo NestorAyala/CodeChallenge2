@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title> Code Challenge 1</title>
+    
+    <!-- Forces the phone to use and display its original resolution --->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Stylesheets -->
+    <link rel="stylesheet"
+          type="text/css"
+          href="css/reset.css"/>
+    
+    <link rel="stylesheet/less" 
+          type="text/css" 
+          href="css/pokedex.less" />
+    
+    <link rel="stylesheet"
+          type="text/css"
+          href="css/font-awesome.min.css">
+    
+    <link rel="stylesheet"
+          type="text/css"
+          href="css/bootstrap.min.css"/>
+
+
+</head> <!-- End of Head -->
+
+<body>
+    <!-- we set the parameters for the whole page ~-->
+	<div id="container-fluid">
+    <div class="row headerWrapper" style="margin-right: 0px;">
+			<div class="col-xs-12 text-center">
+                <!-- FontTastic sign-->
+				<div class="Return">
+					<i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i>
+				</div>
+				Description
+			</div>
+    </div>
+	  
+    <!-- Beginning of main pokémon description ~ -->
+	<div class ="row pokemonWrapper" style="margin-right: 0px;">
+		
+    <div class="col-xs-6">
+        <div class="mainPokemon"> 
+			<img style='width: 95%' src="images/01Bulbasaur.png" alt="Bulbasaur">
+        </div>
+    </div>
+    
+    <div class="col-xs-6" style="padding-left: 5px;padding-right: 5px;">
+        <div class="mainPokeDescription">
+            <div class="mainPokeName">#001 Bulbasaur </div>  
+            </div>
+            
+                <a class="pokeBall" href="#" style="width: 16px">a</a> 
+                <a class="star" href="#" style="width: 16px">b</a>
+            
+            <div class="pokeSpecs">      
+                <p>0.7m, 6.9kg</p>
+                <p>Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.</p>
+            </div>
+          
+            <div class="pokeTypes">
+                <span class="types grass">Grass</span>
+                <span class="types poison">Poison</span>
+                <span class="types bug">Bug</span>
+            </div>
+
+		</div>
+    </div>
+
+	</div><!-- end of pokemon wrapper --> 
+	
+    <div class="generalInfoWrapper"> General Information </div><!-- end of general info wrapper -->
+        
+        <div> 
+            <table class="table">
+                <tr><td class="title1">Hidden Abilities</td> <td>Clorophyll</td></tr>
+                <tr><td class="title1">Location</td> <td>Luminose City</td></tr>
+            </table>
+        </div>
+
+	
+    <div class="evolutionTitleWrapper"> Evolution </div><!-- end of general info wrapper -->
+    <!-- beggining of the new div for evolutions-->
+    <div class="evolutionWrapper">
+    
+        <div class="container">
+        
+            <div class="row2">
+                
+                <!-- Bulbasaur -->
+                <div class="col-xs-3" style="height: 65px;">
+                    <img class="imageBorder"  src="images/01Bulbasaur.png" alt="Bulbasaur">
+                </div>
+                <div class="col-xs-7" style="height: 65px;">
+                <span class="pokeName">Bulbasaur</span><br>
+                      <span class="types grass">Grass</span>
+                      <span class="types poison">Poison</span>
+                      <span class="types bug">Bug</span></div>
+                <div class="col-xs-2" style="height: 65px;">#001</div>
+                
+                <!-- Ivysaur -->
+                <div class="col-xs-3" style="height: 65px;">
+                    <img class="imageBorder" src="images/02Ivysaur.png" alt="Ivysaur">
+                </div>
+                <div class="col-xs-7" style="height: 65px;">
+                <span class="pokeName">Ivysaur</span>      LV. 17 <br>
+                      <span class="types grass">Grass</span>
+                      <span class="types poison">Poison</span>
+                      <span class="types bug">Bug</span></div>
+                <div class="col-xs-2" style="height: 65px;">#002</div>
+                
+                <!-- Venasaur -->
+                <div class="col-xs-3" style="height: 65px;">
+                    <img class="imageBorder" src="images/03Venusaur.png" alt="Venusaur">
+                </div>
+                <div class="col-xs-7" style="height: 65px;">
+                <span class="pokeName">Venasaur</span> LV. 32 <br>
+                      <span class="types grass">Grass</span>
+                      <span class="types poison">Poison</span>
+                      <span class="types bug">Bug</span></div>
+                <div class="col-xs-2" style="height: 65px;">#003</div>
+                
+            
+            </div>
+            
+        </div>
+</div>
+</body> 
+
+
+
+    <!-- Scripts used-->
+    <script src="js/less.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+</html>

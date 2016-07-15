@@ -1,0 +1,184 @@
+@import "reset.css";
+
+
+/*-----Prevents iPhone from resizing in landscape mode -----*/
+html {-webkit-text-size-adjust: none; }
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;  }
+
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 528px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+
+/*----- BODY -----*/
+body {
+	font-family: 'Helvetica', sans-serif;
+}
+
+
+/*----- HEADER -----*/
+
+.headerWrapper{
+	background: #E91E63;
+	color: #fff;
+	font-size: 15px;
+    padding: 12.5px 0px; 
+    margin: 0 0 15px 0;
+}
+
+
+.Return{
+        position: absolute;
+        top: -10px;
+        left: 35px;
+        padding: 10px;
+}
+
+/*---- End of top header ----*/
+
+.pokemonWrapper{
+    padding: 0 20px 20px 20px;
+}
+
+.row{
+    margin-right: 0px;
+}
+
+.mainPokemon{
+    max-width: 120px;
+    width: auto;
+    height: auto;
+    margin: 10px 20px 0 20px;
+}
+
+
+.mainPokeName{
+    position: relative;
+    font-size: 15px;
+    color: #E91E63;
+    text-align: left;
+    z-index: -1;
+    top: 17px;
+}
+
+.pokeSpecs {
+    display: block;
+    font-size: 10px;
+    color: #949494;
+    text-align: left;
+}
+
+
+
+.types{ 
+    position: relative;
+    font-size: 8px;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    padding: 3px 10px; /* space around the corner top right bottom left */
+    margin: 0px 0px 0px 0px; /* white space oustide box top right bottom left */
+
+}
+.types.grass{ 
+    background-color: #97D077;
+}
+
+.types.poison{ 
+background-color: #966DAB;
+}
+
+.types.bug{ 
+background-color: #67AB9F;
+}
+
+
+.generalInfoWrapper, .evolutionTitleWrapper{
+	background-color: #949494;
+	font-size: 13px;
+	color: #fff;
+	padding: 6px 25px;
+    
+}
+
+.table{
+    font-size: 10px;
+    color: #949494;
+    border-color: #949494;
+    /* margin-left:  16px; */
+    
+}
+
+.title1{
+    font-weight: bold;
+}
+
+
+.imageBorder{
+    width: 90%;
+    position: relative;
+    border-radius: 0px;
+    border: 1px solid #949494;
+    padding: 6px 6px;
+}
+
+.container{
+    margin: 3px 8px;
+    font-size: 10px;
+    color: #949494;
+}
+
+.pokeName{
+    color: #000000;
+    padding: 10px 0;
+}
+
+.col-xs-3, .col-xs-2, .col-xs-7{
+    padding: 10px 0;
+    padding-top: 3px;
+    border-bottom: 1px solid #ddd;
+}
+
+.col-xs-7{
+    padding: 20px 0 0 0;
+}
+
+.pokeBall, .star {
+  z-index: 2;
+  position: relative;
+  left: 136px;
+  bottom: 2px;
+  background: url("sprites/pokeSprite.png") no-repeat;
+  display: block;
+  line-height: 16px;
+  text-indent: -9999px;
+  background-position: 0 -32px;
+}
+
+
+.pokeBall:hover, .pokeBall:focus{
+    background-position: 0 -48px;
+}
+
+.star {
+  left: 160px;
+  bottom: 18px;
+  background-position: 0 -64px;
+}
+
+.star:hover, .star:focus{
+  background-position: 0 -80px;
+}
+
+/*----- OTHER -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
